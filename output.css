@@ -4,13 +4,13 @@
 }
 
 .card {
-  background: white;
+  background: yellow;
 }
 .card__title {
   font-size: 1.5rem;
 }
 .card__description {
-  color: gray;
+  color: blue;
 }
 .card--highlighted {
   box-shadow: 0 0 10px red;

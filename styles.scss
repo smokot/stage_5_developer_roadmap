@@ -7,14 +7,14 @@ $border-radius: 8px;
 }
 
 .card {
-  background: white;
+  background: yellow;
 
   &__title {
     font-size: 1.5rem;
   }
 
   &__description {
-    color: gray;
+    color: blue;
   }
 
   &--highlighted {
