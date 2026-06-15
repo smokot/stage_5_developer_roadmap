@@ -1,0 +1,22 @@
+.button {
+  background: #3498db;
+  border-radius: 8px;
+}
+
+.card {
+  background: white;
+}
+.card__title {
+  font-size: 1.5rem;
+}
+.card__description {
+  color: gray;
+}
+.card--highlighted {
+  box-shadow: 0 0 10px red;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=output.css.map */

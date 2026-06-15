@@ -1,0 +1,39 @@
+$primary-color: #3498db;
+$border-radius: 8px;
+
+.button {
+  background: $primary-color;
+  border-radius: $border-radius;
+}
+
+.card {
+  background: white;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    color: gray;
+  }
+
+  &--highlighted {
+    box-shadow: 0 0 10px red;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@mixin withArg($color: red) {
+  background-color: $color;
+}
+
+@mixin withoutArg {
+  color: blue;
+}
+
+.includeTest {
+  @include withArg(black);
+}
