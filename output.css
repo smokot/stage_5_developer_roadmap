@@ -5,6 +5,7 @@
 
 .card {
   background: yellow;
+  margin: 15px;
 }
 .card__title {
   font-size: 1.5rem;
@@ -35,9 +36,30 @@
 }
 .testElement:hover {
   color: #999900;
+  background-color: grey;
 }
 .testElement:active {
   width: 50px;
+}
+
+.test-id-1 {
+  width: 20px;
+  border: 1px solid black;
+}
+
+.test-id-2 {
+  width: 40px;
+  border: 1px solid black;
+}
+
+.test-id-3 {
+  width: 60px;
+  border: 1px solid black;
+}
+
+.test-id-4 {
+  width: 80px;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=output.css.map */

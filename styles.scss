@@ -1,5 +1,6 @@
 
-@use 'colors';
+@use 'utils';
+
 
 $primary-color: #3498db;
 $border-radius: 8px;
@@ -15,6 +16,7 @@ $yellow-color: yellow;
 
 .card {
   background: yellow;
+  margin: utils.$input;
 
   &__title {
     font-size: 1.5rem;
@@ -53,12 +55,17 @@ $yellow-color: yellow;
 .testElement {
   border: 1px solid black;
 
-  color: colors.$grey-color;
+  color: utils.$grey-color;
 
   &:hover {
     color: darken($yellow-color, 20%);
+    background-color: utils.$grey-color;
   }
   &:active {
     width: half(100px);
   }
+}
+
+@for $i from 1 to 5 {
+  .test-id-#{$i} {width: 20px * $i; border: 1px solid black;}
 }
