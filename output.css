@@ -29,4 +29,15 @@
   font-size: 20px;
 }
 
+.testElement {
+  border: 1px solid black;
+  color: grey;
+}
+.testElement:hover {
+  color: #999900;
+}
+.testElement:active {
+  width: 50px;
+}
+
 /*# sourceMappingURL=output.css.map */

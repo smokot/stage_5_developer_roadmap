@@ -1,9 +1,16 @@
+
+@use 'colors';
+
 $primary-color: #3498db;
 $border-radius: 8px;
-
+$yellow-color: yellow;
 .button {
   background: $primary-color;
   border-radius: $border-radius;
+}
+
+@function half($value) {
+  @return calc($value / 2);
 }
 
 .card {
@@ -41,4 +48,17 @@ $border-radius: 8px;
 }
 .includeTestTwo {
   @include withoutArg;
+}
+
+.testElement {
+  border: 1px solid black;
+
+  color: colors.$grey-color;
+
+  &:hover {
+    color: darken($yellow-color, 20%);
+  }
+  &:active {
+    width: half(100px);
+  }
 }
