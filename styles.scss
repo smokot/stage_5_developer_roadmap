@@ -28,12 +28,17 @@ $border-radius: 8px;
 
 @mixin withArg($color: red) {
   background-color: $color;
+  color: $color;
 }
 
 @mixin withoutArg {
-  color: blue;
+  color: $primary-color;
+  font-size: 20px;
 }
 
 .includeTest {
   @include withArg(black);
+}
+.includeTestTwo {
+  @include withoutArg;
 }
