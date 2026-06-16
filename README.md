@@ -10,4 +10,5 @@
 * @extend — наследование стилей
 * % — "молчаливый" класс
 * Условные конструкции (@if, @else, @return)
+* @debug, @warn, @error — отладка
 * Компиляция sass styles.scss output.css
