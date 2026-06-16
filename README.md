@@ -8,4 +8,5 @@
 * Импорт/использование (@use, @forward).
 * Циклы (@for, @each).
 * @extend — наследование стилей
+* % — "молчаливый" класс
 * Компиляция sass styles.scss output.css
