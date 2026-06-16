@@ -12,4 +12,8 @@
 * Условные конструкции (@if, @else, @return)
 * @at-root — выход из вложенности
 * @debug, @warn, @error — отладка
+* @use 'theme' with (
+  $primary: red,
+  $secondary: white
+);
 * Компиляция sass styles.scss output.css
