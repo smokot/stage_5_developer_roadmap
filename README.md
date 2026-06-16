@@ -7,4 +7,5 @@
 * Функции (lighten, darken, rgba).
 * Импорт/использование (@use, @forward).
 * Циклы (@for, @each).
+* @extend — наследование стилей
 * Компиляция sass styles.scss output.css
