@@ -19,4 +19,6 @@
 * $rand: random(100); // 0-100
 * $slice: str-slice($text, 1, 5);
 * Компиляция sass styles.scss output.css
-* sass --watch src/styles:dist/css       |||||    sass --watch style.scss:style.css
+* sass --watch src/styles:dist/css - отслеживание всей папки 
+* sass --watch src/main.scss:dist/main.css src/theme.scss:dist/theme.css - отслежование двух файлов
+* sass --watch style.scss:style.css - отслеживание одного файла
