@@ -16,4 +16,6 @@
   $primary: red,
   $secondary: white
 );
+* $rand: random(100); // 0-100
+* $slice: str-slice($text, 1, 5);
 * Компиляция sass styles.scss output.css
