@@ -6,7 +6,7 @@
 * Миксины (@mixin, @include) — для переиспользования наборов свойств.
 * Функции (lighten, darken, rgba).
 * Импорт/использование (@use, @forward).
-* Циклы (@for, @each map-get).
+* Циклы (@for, @each map-get($arr, key)).
 * @extend — наследование стилей
 * % — "молчаливый" класс
 * Условные конструкции (@if, @else, @return)
