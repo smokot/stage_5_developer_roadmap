@@ -5,6 +5,7 @@
 $primary-color: #3498db;
 $border-radius: 8px;
 $yellow-color: yellow;
+
 .button {
   background: $primary-color;
   border-radius: $border-radius;
@@ -36,7 +37,11 @@ $yellow-color: yellow;
 }
 
 @mixin withArg($color: red) {
-  background-color: $color;
+  @if ($color == white) {
+    background-color: yellow;
+  } @else {
+    background-color: #05b5fd;
+  }
   color: $color;
 }
 
@@ -57,6 +62,10 @@ $yellow-color: yellow;
 
   color: utils.$grey-color;
 
+  @at-root .mainCoco {
+    color: brown;
+  }
+
   &:hover {
     color: darken($yellow-color, 20%);
     background-color: utils.$grey-color;
@@ -68,4 +77,32 @@ $yellow-color: yellow;
 
 @for $i from 1 to 5 {
   .test-id-#{$i} {width: 20px * $i; border: 1px solid black;}
+}
+
+$themes: (
+  light: (bg: white, text: black, primary: blue),
+  dark: (bg: black, text: white, primary: lightblue)
+);
+
+$list: (
+  first: red,
+  second: black
+);
+$secondList: 20px, 30px, 40px;
+
+@each $name, $content in $list {
+  .popo-#{$name} {
+    background-color: $content;
+  }
+}
+
+%hiddenClass {
+  background-color: white;
+  box-shadow: 0 0 10px red;
+  border: 1px solid black;
+}
+
+.child {
+  color: red;
+  @extend %hiddenClass
 }
